@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		038EAFB52C3C5D2D001DD826 /* RavenChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038EAFB42C3C5D2D001DD826 /* RavenChallengeApp.swift */; };
+		038EAFB72C3C5D2D001DD826 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038EAFB62C3C5D2D001DD826 /* ContentView.swift */; };
+		038EAFB92C3C5D2F001DD826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038EAFB82C3C5D2F001DD826 /* Assets.xcassets */; };
+		038EAFBC2C3C5D2F001DD826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038EAFBB2C3C5D2F001DD826 /* Preview Assets.xcassets */; };
+		038EAFC62C3C5D2F001DD826 /* RavenChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038EAFC52C3C5D2F001DD826 /* RavenChallengeTests.swift */; };
+		038EAFD02C3C5D2F001DD826 /* RavenChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038EAFCF2C3C5D2F001DD826 /* RavenChallengeUITests.swift */; };
+		038EAFD22C3C5D2F001DD826 /* RavenChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038EAFD12C3C5D2F001DD826 /* RavenChallengeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		038EAFC22C3C5D2F001DD826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 038EAFA92C3C5D2D001DD826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 038EAFB02C3C5D2D001DD826;
+			remoteInfo = RavenChallenge;
+		};
+		038EAFCC2C3C5D2F001DD826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 038EAFA92C3C5D2D001DD826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 038EAFB02C3C5D2D001DD826;
+			remoteInfo = RavenChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		038EAFB12C3C5D2D001DD826 /* RavenChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RavenChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		038EAFB42C3C5D2D001DD826 /* RavenChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavenChallengeApp.swift; sourceTree = "<group>"; };
+		038EAFB62C3C5D2D001DD826 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		038EAFB82C3C5D2F001DD826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		038EAFBB2C3C5D2F001DD826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		038EAFC12C3C5D2F001DD826 /* RavenChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavenChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		038EAFC52C3C5D2F001DD826 /* RavenChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavenChallengeTests.swift; sourceTree = "<group>"; };
+		038EAFCB2C3C5D2F001DD826 /* RavenChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavenChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		038EAFCF2C3C5D2F001DD826 /* RavenChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavenChallengeUITests.swift; sourceTree = "<group>"; };
+		038EAFD12C3C5D2F001DD826 /* RavenChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavenChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		038EAFAE2C3C5D2D001DD826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038EAFBE2C3C5D2F001DD826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038EAFC82C3C5D2F001DD826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		038EAFA82C3C5D2D001DD826 = {
+			isa = PBXGroup;
+			children = (
+				038EAFB32C3C5D2D001DD826 /* RavenChallenge */,
+				038EAFC42C3C5D2F001DD826 /* RavenChallengeTests */,
+				038EAFCE2C3C5D2F001DD826 /* RavenChallengeUITests */,
+				038EAFB22C3C5D2D001DD826 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		038EAFB22C3C5D2D001DD826 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				038EAFB12C3C5D2D001DD826 /* RavenChallenge.app */,
+				038EAFC12C3C5D2F001DD826 /* RavenChallengeTests.xctest */,
+				038EAFCB2C3C5D2F001DD826 /* RavenChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		038EAFB32C3C5D2D001DD826 /* RavenChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				038EAFDE2C3C5D4C001DD826 /* Clean */,
+				038EAFB42C3C5D2D001DD826 /* RavenChallengeApp.swift */,
+				038EAFB62C3C5D2D001DD826 /* ContentView.swift */,
+				038EAFBA2C3C5D2F001DD826 /* Preview Content */,
+			);
+			path = RavenChallenge;
+			sourceTree = "<group>";
+		};
+		038EAFBA2C3C5D2F001DD826 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				038EAFBB2C3C5D2F001DD826 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		038EAFC42C3C5D2F001DD826 /* RavenChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				038EAFC52C3C5D2F001DD826 /* RavenChallengeTests.swift */,
+			);
+			path = RavenChallengeTests;
+			sourceTree = "<group>";
+		};
+		038EAFCE2C3C5D2F001DD826 /* RavenChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				038EAFCF2C3C5D2F001DD826 /* RavenChallengeUITests.swift */,
+				038EAFD12C3C5D2F001DD826 /* RavenChallengeUITestsLaunchTests.swift */,
+			);
+			path = RavenChallengeUITests;
+			sourceTree = "<group>";
+		};
+		038EAFDE2C3C5D4C001DD826 /* Clean */ = {
+			isa = PBXGroup;
+			children = (
+				038EAFE52C3C5DB0001DD826 /* Assets */,
+				038EAFE02C3C5D66001DD826 /* Data */,
+				038EAFE22C3C5D95001DD826 /* Domain */,
+				038EAFE12C3C5D6A001DD826 /* Presentation */,
+				038EAFE42C3C5DA3001DD826 /* Repository */,
+				038EAFE32C3C5D9C001DD826 /* UseCases */,
+				038EAFDF2C3C5D55001DD826 /* Widgets */,
+			);
+			path = Clean;
+			sourceTree = "<group>";
+		};
+		038EAFDF2C3C5D55001DD826 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		038EAFE02C3C5D66001DD826 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		038EAFE12C3C5D6A001DD826 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		038EAFE22C3C5D95001DD826 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		038EAFE32C3C5D9C001DD826 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		038EAFE42C3C5DA3001DD826 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		038EAFE52C3C5DB0001DD826 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				038EAFB82C3C5D2F001DD826 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		038EAFB02C3C5D2D001DD826 /* RavenChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038EAFD52C3C5D2F001DD826 /* Build configuration list for PBXNativeTarget "RavenChallenge" */;
+			buildPhases = (
+				038EAFAD2C3C5D2D001DD826 /* Sources */,
+				038EAFAE2C3C5D2D001DD826 /* Frameworks */,
+				038EAFAF2C3C5D2D001DD826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RavenChallenge;
+			productName = RavenChallenge;
+			productReference = 038EAFB12C3C5D2D001DD826 /* RavenChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		038EAFC02C3C5D2F001DD826 /* RavenChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038EAFD82C3C5D2F001DD826 /* Build configuration list for PBXNativeTarget "RavenChallengeTests" */;
+			buildPhases = (
+				038EAFBD2C3C5D2F001DD826 /* Sources */,
+				038EAFBE2C3C5D2F001DD826 /* Frameworks */,
+				038EAFBF2C3C5D2F001DD826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				038EAFC32C3C5D2F001DD826 /* PBXTargetDependency */,
+			);
+			name = RavenChallengeTests;
+			productName = RavenChallengeTests;
+			productReference = 038EAFC12C3C5D2F001DD826 /* RavenChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		038EAFCA2C3C5D2F001DD826 /* RavenChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038EAFDB2C3C5D2F001DD826 /* Build configuration list for PBXNativeTarget "RavenChallengeUITests" */;
+			buildPhases = (
+				038EAFC72C3C5D2F001DD826 /* Sources */,
+				038EAFC82C3C5D2F001DD826 /* Frameworks */,
+				038EAFC92C3C5D2F001DD826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				038EAFCD2C3C5D2F001DD826 /* PBXTargetDependency */,
+			);
+			name = RavenChallengeUITests;
+			productName = RavenChallengeUITests;
+			productReference = 038EAFCB2C3C5D2F001DD826 /* RavenChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		038EAFA92C3C5D2D001DD826 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					038EAFB02C3C5D2D001DD826 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					038EAFC02C3C5D2F001DD826 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 038EAFB02C3C5D2D001DD826;
+					};
+					038EAFCA2C3C5D2F001DD826 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 038EAFB02C3C5D2D001DD826;
+					};
+				};
+			};
+			buildConfigurationList = 038EAFAC2C3C5D2D001DD826 /* Build configuration list for PBXProject "RavenChallenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 038EAFA82C3C5D2D001DD826;
+			productRefGroup = 038EAFB22C3C5D2D001DD826 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				038EAFB02C3C5D2D001DD826 /* RavenChallenge */,
+				038EAFC02C3C5D2F001DD826 /* RavenChallengeTests */,
+				038EAFCA2C3C5D2F001DD826 /* RavenChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		038EAFAF2C3C5D2D001DD826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038EAFBC2C3C5D2F001DD826 /* Preview Assets.xcassets in Resources */,
+				038EAFB92C3C5D2F001DD826 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038EAFBF2C3C5D2F001DD826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038EAFC92C3C5D2F001DD826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		038EAFAD2C3C5D2D001DD826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038EAFB72C3C5D2D001DD826 /* ContentView.swift in Sources */,
+				038EAFB52C3C5D2D001DD826 /* RavenChallengeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038EAFBD2C3C5D2F001DD826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038EAFC62C3C5D2F001DD826 /* RavenChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038EAFC72C3C5D2F001DD826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038EAFD02C3C5D2F001DD826 /* RavenChallengeUITests.swift in Sources */,
+				038EAFD22C3C5D2F001DD826 /* RavenChallengeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		038EAFC32C3C5D2F001DD826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 038EAFB02C3C5D2D001DD826 /* RavenChallenge */;
+			targetProxy = 038EAFC22C3C5D2F001DD826 /* PBXContainerItemProxy */;
+		};
+		038EAFCD2C3C5D2F001DD826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 038EAFB02C3C5D2D001DD826 /* RavenChallenge */;
+			targetProxy = 038EAFCC2C3C5D2F001DD826 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		038EAFD32C3C5D2F001DD826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		038EAFD42C3C5D2F001DD826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		038EAFD62C3C5D2F001DD826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RavenChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = AKN8MQUNYT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChallengeiOSRaven.RavenChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		038EAFD72C3C5D2F001DD826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RavenChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = AKN8MQUNYT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChallengeiOSRaven.RavenChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		038EAFD92C3C5D2F001DD826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AKN8MQUNYT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChallengeiOSRaven.RavenChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RavenChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RavenChallenge";
+			};
+			name = Debug;
+		};
+		038EAFDA2C3C5D2F001DD826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AKN8MQUNYT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChallengeiOSRaven.RavenChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RavenChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RavenChallenge";
+			};
+			name = Release;
+		};
+		038EAFDC2C3C5D2F001DD826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AKN8MQUNYT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChallengeiOSRaven.RavenChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RavenChallenge;
+			};
+			name = Debug;
+		};
+		038EAFDD2C3C5D2F001DD826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AKN8MQUNYT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChallengeiOSRaven.RavenChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RavenChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		038EAFAC2C3C5D2D001DD826 /* Build configuration list for PBXProject "RavenChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038EAFD32C3C5D2F001DD826 /* Debug */,
+				038EAFD42C3C5D2F001DD826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		038EAFD52C3C5D2F001DD826 /* Build configuration list for PBXNativeTarget "RavenChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038EAFD62C3C5D2F001DD826 /* Debug */,
+				038EAFD72C3C5D2F001DD826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		038EAFD82C3C5D2F001DD826 /* Build configuration list for PBXNativeTarget "RavenChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038EAFD92C3C5D2F001DD826 /* Debug */,
+				038EAFDA2C3C5D2F001DD826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		038EAFDB2C3C5D2F001DD826 /* Build configuration list for PBXNativeTarget "RavenChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038EAFDC2C3C5D2F001DD826 /* Debug */,
+				038EAFDD2C3C5D2F001DD826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 038EAFA92C3C5D2D001DD826 /* Project object */;
+}
