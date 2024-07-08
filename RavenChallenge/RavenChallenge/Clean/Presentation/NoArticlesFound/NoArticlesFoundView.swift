@@ -9,7 +9,17 @@ import SwiftUI
 
 struct NoArticlesFoundView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            VStack{
+                Image(systemName: "message")
+                    .resizable()
+                    .frame(maxWidth: 200, maxHeight: 200)
+                    .foregroundColor(Color.red)
+                Text("No articles found")
+                    .foregroundColor(Color.red)
+                    .bold()
+            }
+        }
     }
 }
 

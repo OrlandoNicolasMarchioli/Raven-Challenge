@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum NavigationMode{
+    case splash
+    case allArticles
+    case admin
+    case user
+}
