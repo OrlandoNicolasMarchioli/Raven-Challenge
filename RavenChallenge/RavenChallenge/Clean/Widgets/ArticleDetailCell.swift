@@ -80,7 +80,7 @@ struct ArticleDetailCellChip<T>: View {
                             Text( (getArticleAbstract(item)))
                                 .padding(.leading,5)
                                 .padding(.top)
-                                .foregroundColor(Color.gray)
+                                .foregroundColor(Color.black)
                                 .font(.custom("Georgia", size: 16))
                                 .lineLimit(nil)
                                 .multilineTextAlignment(.leading)
