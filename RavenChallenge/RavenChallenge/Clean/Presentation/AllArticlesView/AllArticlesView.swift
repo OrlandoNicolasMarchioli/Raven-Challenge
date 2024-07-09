@@ -8,59 +8,76 @@
 import SwiftUI
 
 struct AllArticlesView: View {
-    @ObservedObject var allArticlesViewModel = AllArticlesViewModel()
+    @ObservedObject var allArticlesViewModel = AllArticlesViewModel(articlesFetchUseCase: DefaultArticlesFetchUseCase(articlesRepository: ArticlesApiFetch(articlesApi: ArticleApi.getInstance())))
     
-    @State var noArticlesFound = true
+    @State var noArticlesFound = false
     let imageBaseURL: String = ProcessInfo.processInfo.environment["baseImageUrl"] ?? ""
     @State var filterName: String = ""
-    
+    let with = UIScreen.main.bounds.size.width
     
     var body: some View {
         GeometryReader { geometry in
             NavigationView {
                 ZStack {
                     VStack(alignment: .center) {
-                        VStack(alignment: .trailing){
-                            HStack {
-                                TextField("Search articles: ", text: $filterName)
-                                    .foregroundColor(Color.black)
-                                    .frame(minWidth: 100)
-                                    .padding(.leading)
-                                
-                                Button(action: {
-                                    
-                                }) {
-                                    Image(systemName: "magnifyingglass")
-                                        .resizable()
-                                        .frame(width: 25, height: 25)
-                                        .foregroundColor(Color.red)
-                                        .bold()
-                                        .padding(.trailing)
-                                }.padding()
-                            }
-                            .background(Color.white)
-                            .cornerRadius(8)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 8)
-                                    .stroke(Color.red, lineWidth: 2)
-                            )
-                            
+                        VStack() {
+                            Image("newYorkTimesLogo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(maxWidth: 250)
                         }
-                        .frame(width: geometry.size.width)
-                        .padding(.top)
+                        .padding(.top, -100)
+                        .padding(.bottom, -100)
                         
-                        if (noArticlesFound){
+                        if (!allArticlesViewModel.state.noProductsFound) {
+                            ScrollView {
+                                Grid(alignment: .center, horizontalSpacing: 20, verticalSpacing: 10) {
+                                    ForEach(allArticlesViewModel.state.articles) { article in
+                                        NavigationLink(destination: Text("Detail View")) {
+                                            ArticleCellChip<SelectedArticleData>(
+                                                item: article,
+                                                getArticleImageUrl: {
+                                                    if(with < 210){
+                                                        $0.thumbnailUrl
+                                                    }
+                                                    else if( with < 440 ){
+                                                        $0.mediumUrl
+                                                    }else{
+                                                        $0.largeUrl
+                                                    }
+                                                },
+                                                getArticleTitle: { $0.title },
+                                                getArticleAbstract: { $0.abstract },
+                                                getArticleDate: { $0.date },
+                                                getArticleSource: { $0.source },
+                                                getArticleByline: { $0.byline },
+                                                onChipTapped: {}
+                                            )
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        if (noArticlesFound) {
                             Spacer()
                             NoArticlesFoundView()
                             Spacer()
                         }
-                        
+                    }.onAppear(){
+                        allArticlesViewModel.fetchArticlesByRange(range: "1")
+                    }.onReceive(self.allArticlesViewModel.$state){state in
+                        if(state.noProductsFound){
+                            noArticlesFound = true
+                        }else{
+                            noArticlesFound = false
+                        }
                     }
                 }
-                
             }
         }
     }
+    
 }
 
 #Preview {
