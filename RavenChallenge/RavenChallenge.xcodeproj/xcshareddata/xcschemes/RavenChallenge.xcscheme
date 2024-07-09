@@ -85,6 +85,11 @@
             value = "qTl6HA9lEk9bHwEMNSrdjRAceMnSqQEZ"
             isEnabled = "YES">
          </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "cacheKey"
+            value = "cachedArticles"
+            isEnabled = "YES">
+         </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
