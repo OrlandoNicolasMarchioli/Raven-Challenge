@@ -33,7 +33,7 @@ struct AllArticlesView: View {
                             ScrollView {
                                 Grid(alignment: .center, horizontalSpacing: 20, verticalSpacing: 10) {
                                     ForEach(allArticlesViewModel.state.articles) { article in
-                                        NavigationLink(destination: Text("Detail View")) {
+                                        NavigationLink(destination: ArticleDetailView(article: article, with: Int(with))) {
                                             ArticleCellChip<SelectedArticleData>(
                                                 item: article,
                                                 getArticleImageUrl: {
