@@ -30,7 +30,7 @@ struct ArticleCellChip<T>: View {
     let onChipTapped: (() -> Void)
     
     var body: some View {
-        VStack{
+        VStack (alignment: .center){
             VStack(alignment: .leading){
                 Text(getArticleTitle(item))
                     .padding(.bottom, 0)

@@ -16,6 +16,8 @@
 		031302D02C3D801B0076F7C0 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031302CF2C3D801B0076F7C0 /* ArticleCell.swift */; };
 		031302D32C3D82A30076F7C0 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031302D22C3D82A30076F7C0 /* SpinnerView.swift */; };
 		031302D52C3D837B0076F7C0 /* SelectedArticleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031302D42C3D837B0076F7C0 /* SelectedArticleData.swift */; };
+		031302D72C3DC1DC0076F7C0 /* ArticleDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031302D62C3DC1DC0076F7C0 /* ArticleDetailCell.swift */; };
+		031302DA2C3DCAF90076F7C0 /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031302D92C3DCAF90076F7C0 /* ArticleDetailView.swift */; };
 		038EAFB52C3C5D2D001DD826 /* RavenChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038EAFB42C3C5D2D001DD826 /* RavenChallengeApp.swift */; };
 		038EAFB72C3C5D2D001DD826 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038EAFB62C3C5D2D001DD826 /* ContentView.swift */; };
 		038EAFB92C3C5D2F001DD826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038EAFB82C3C5D2F001DD826 /* Assets.xcassets */; };
@@ -59,6 +61,8 @@
 		031302CF2C3D801B0076F7C0 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		031302D22C3D82A30076F7C0 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		031302D42C3D837B0076F7C0 /* SelectedArticleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedArticleData.swift; sourceTree = "<group>"; };
+		031302D62C3DC1DC0076F7C0 /* ArticleDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailCell.swift; sourceTree = "<group>"; };
+		031302D92C3DCAF90076F7C0 /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		038EAFB12C3C5D2D001DD826 /* RavenChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RavenChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		038EAFB42C3C5D2D001DD826 /* RavenChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavenChallengeApp.swift; sourceTree = "<group>"; };
 		038EAFB62C3C5D2D001DD826 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +130,14 @@
 				031302D22C3D82A30076F7C0 /* SpinnerView.swift */,
 			);
 			path = SpinnerView;
+			sourceTree = "<group>";
+		};
+		031302D82C3DCAA80076F7C0 /* ArticleDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				031302D92C3DCAF90076F7C0 /* ArticleDetailView.swift */,
+			);
+			path = ArticleDetailView;
 			sourceTree = "<group>";
 		};
 		038EAFA82C3C5D2D001DD826 = {
@@ -202,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				031302CF2C3D801B0076F7C0 /* ArticleCell.swift */,
+				031302D62C3DC1DC0076F7C0 /* ArticleDetailCell.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -217,6 +230,7 @@
 		038EAFE12C3C5D6A001DD826 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				031302D82C3DCAA80076F7C0 /* ArticleDetailView */,
 				031302D12C3D828A0076F7C0 /* SpinnerView */,
 				038EAFF52C3C9072001DD826 /* NoArticlesFound */,
 				038EAFE92C3C8DEB001DD826 /* AllArticlesView */,
@@ -429,6 +443,7 @@
 				031302C72C3CA51E0076F7C0 /* ArticlesRepository.swift in Sources */,
 				038EAFF42C3C8FE6001DD826 /* SplashScreenView.swift in Sources */,
 				038EAFEF2C3C8F05001DD826 /* AllArticlesState.swift in Sources */,
+				031302D72C3DC1DC0076F7C0 /* ArticleDetailCell.swift in Sources */,
 				031302CC2C3D7A4D0076F7C0 /* ArticleApi.swift in Sources */,
 				031302D32C3D82A30076F7C0 /* SpinnerView.swift in Sources */,
 				038EAFB72C3C5D2D001DD826 /* ContentView.swift in Sources */,
@@ -440,6 +455,7 @@
 				038EAFEB2C3C8EE9001DD826 /* AllArticlesView.swift in Sources */,
 				031302C22C3C95FE0076F7C0 /* NavigationManager.swift in Sources */,
 				038EAFF72C3C9099001DD826 /* NoArticlesFoundView.swift in Sources */,
+				031302DA2C3DCAF90076F7C0 /* ArticleDetailView.swift in Sources */,
 				031302D02C3D801B0076F7C0 /* ArticleCell.swift in Sources */,
 				031302CE2C3D7D1E0076F7C0 /* FetchError.swift in Sources */,
 				031302C92C3CA53A0076F7C0 /* ArticlesFetchUseCase.swift in Sources */,
