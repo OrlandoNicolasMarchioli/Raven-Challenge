@@ -12,7 +12,7 @@ struct AllArticlesView: View {
     
     @State var noArticlesFound = false
     let imageBaseURL: String = ProcessInfo.processInfo.environment["baseImageUrl"] ?? ""
-    @State var filterName: String = ""
+    @State var filterName: String = "1"
     let with = UIScreen.main.bounds.size.width
     
     var body: some View {
@@ -20,14 +20,52 @@ struct AllArticlesView: View {
             NavigationView {
                 ZStack {
                     VStack(alignment: .center) {
-                        VStack() {
-                            Image("newYorkTimesLogo")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(maxWidth: 250)
+                        VStack {
+                            HStack {
+                                Image("newYorkTimesLogo")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(maxWidth: 250)
+                                
+                            }
                         }
                         .padding(.top, -100)
                         .padding(.bottom, -100)
+                        
+                        HStack(alignment: .top ){
+                            Menu {
+                                Button(action: {
+                                    filterName = "1"
+                                    allArticlesViewModel.fetchArticlesByRange(range: "1")
+                                }) {
+                                    Text("1 day")
+                                }
+                                Button(action: {
+                                    filterName = "7"
+                                    allArticlesViewModel.fetchArticlesByRange(range: "7")
+                                }) {
+                                    Text("7 days")
+                                }
+                                Button(action: {
+                                    filterName = "30"
+                                    allArticlesViewModel.fetchArticlesByRange(range: "30")
+                                }) {
+                                    Text("30 days")
+                                }
+                            } label: {
+                                Label("Select the date range ", systemImage: "line.horizontal.3.decrease.circle")
+                                    .labelStyle(TitleOnlyLabelStyle())
+                                    .bold()
+                                
+                            }
+                            .foregroundColor(.black)
+                            .padding(.bottom)
+                            
+                            Image(systemName: "magnifyingglass")
+                                    .foregroundColor(.black)
+                            
+                        }
+
                         
                         if (!allArticlesViewModel.state.noProductsFound) {
                             ScrollView {
@@ -65,7 +103,7 @@ struct AllArticlesView: View {
                             Spacer()
                         }
                     }.onAppear(){
-                        allArticlesViewModel.fetchArticlesByRange(range: "1")
+                        allArticlesViewModel.fetchArticlesByRange(range: filterName)
                     }.onReceive(self.allArticlesViewModel.$state){state in
                         if(state.noProductsFound){
                             noArticlesFound = true
