@@ -9,14 +9,16 @@ import SwiftUI
 
 struct SplashScreenView: View {
     var body: some View {
-        ZStack{
-            VStack{
-                Image("spashScreenImage")
-                    .resizable()
-                    .frame(maxWidth: 350,maxHeight: 350)
+            ZStack{
+                Color("backgroundLogoGray")
+                    .edgesIgnoringSafeArea(.all) 
+                VStack{
+                    Image("spashScreenImage")
+                        .resizable()
+                        .frame(maxWidth: 350, maxHeight: 350)
+                }
             }
         }
-    }
 }
 
 #Preview {

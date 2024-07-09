@@ -14,9 +14,9 @@ struct NoArticlesFoundView: View {
                 Image(systemName: "message")
                     .resizable()
                     .frame(maxWidth: 200, maxHeight: 200)
-                    .foregroundColor(Color.red)
+                    .foregroundColor(Color("backgroundLogoGray"))
                 Text("No articles found")
-                    .foregroundColor(Color.red)
+                    .foregroundColor(Color("backgroundLogoGray"))
                     .bold()
             }
         }
