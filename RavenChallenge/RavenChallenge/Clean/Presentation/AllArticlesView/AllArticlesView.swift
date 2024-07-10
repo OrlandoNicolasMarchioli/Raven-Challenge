@@ -108,6 +108,8 @@ struct AllArticlesView: View {
                 noArticlesFound = state.noProductsFound
                 if(state.hasError && state.noProductsFound){
                     apiError = true
+                }else{
+                    apiError = false
                 }
             }
         }

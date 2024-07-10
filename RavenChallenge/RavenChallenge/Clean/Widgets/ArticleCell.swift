@@ -72,16 +72,18 @@ struct ArticleCellChip<T>: View {
             }
             VStack(alignment: .leading){
                 HStack(alignment: .top){
+                    Spacer()
                     Text(getArticleByline(item) + " for " + getArticleSource(item))
                         .foregroundColor(Color.gray)
                         .bold()
-                        .font(.custom("Georgia", size: 14))
+                        .font(.custom("Georgia", size: 10))
+                        .padding(.trailing)
                 }
             }
             
             Spacer()
             
-        }.padding(.bottom, 30)
+        }.padding(.bottom, 15)
         Spacer()
         .onTapGesture {
             onChipTapped()
