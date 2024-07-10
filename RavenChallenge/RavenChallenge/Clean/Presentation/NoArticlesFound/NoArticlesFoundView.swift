@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct NoArticlesFoundView: View {
+    var message: String
+    
+    init(message: String) {
+        self.message = message
+    }
+    
     var body: some View {
         ZStack{
             VStack{
@@ -15,7 +21,7 @@ struct NoArticlesFoundView: View {
                     .resizable()
                     .frame(maxWidth: 200, maxHeight: 200)
                     .foregroundColor(Color("backgroundLogoGray"))
-                Text("No articles found")
+                Text(message)
                     .foregroundColor(Color("backgroundLogoGray"))
                     .bold()
             }
@@ -24,5 +30,5 @@ struct NoArticlesFoundView: View {
 }
 
 #Preview {
-    NoArticlesFoundView()
+    NoArticlesFoundView(message: "No articles found")
 }

@@ -10,10 +10,10 @@ import Combine
 class AllArticlesViewModel: ObservableObject{
     @Published var state: AllArticlesState
     static let defaultState = AllArticlesState(articles: [], errorMessage: "", message: "", hasError: false, noProductsFound: true)
-    private let articlesFetchUseCase: DefaultArticlesFetchUseCase
+    private let articlesFetchUseCase: ArticlesFetchUseCase
     private var cancellables: Set<AnyCancellable> = []
     
-    init(initialState: AllArticlesState = defaultState, articlesFetchUseCase: DefaultArticlesFetchUseCase) {
+    init(initialState: AllArticlesState = defaultState, articlesFetchUseCase: ArticlesFetchUseCase) {
         self.state = initialState
         self.articlesFetchUseCase = articlesFetchUseCase
     }

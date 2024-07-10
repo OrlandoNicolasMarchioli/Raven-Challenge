@@ -13,6 +13,7 @@ struct AllArticlesView: View {
     
     @State var noArticlesFound = false
     @State var filterName: String = "1"
+    @State var apiError: Bool = false
     let with = UIScreen.main.bounds.size.width
     
     var body: some View {
@@ -61,7 +62,7 @@ struct AllArticlesView: View {
                         .foregroundColor(.black)
                 }
                 
-                if (!allArticlesViewModel.state.noProductsFound) {
+                if (!apiError && !noArticlesFound) {
                     ScrollView {
                         Grid(alignment: .center, horizontalSpacing: 20, verticalSpacing: 10) {
                             ForEach(allArticlesViewModel.state.articles) { article in
@@ -90,9 +91,13 @@ struct AllArticlesView: View {
                     }
                 }
                 
-                if (noArticlesFound) {
+                if (noArticlesFound && !apiError) {
                     Spacer()
-                    NoArticlesFoundView()
+                    NoArticlesFoundView(message: "No articles found")
+                    Spacer()
+                }else if (apiError){
+                    Spacer()
+                    NoArticlesFoundView(message: "We have some issues now, please try later")
                     Spacer()
                 }
             }
@@ -101,6 +106,9 @@ struct AllArticlesView: View {
             }
             .onReceive(self.allArticlesViewModel.$state) { state in
                 noArticlesFound = state.noProductsFound
+                if(state.hasError && state.noProductsFound){
+                    apiError = true
+                }
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())

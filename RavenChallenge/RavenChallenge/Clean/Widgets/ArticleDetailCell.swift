@@ -66,16 +66,16 @@ struct ArticleDetailCellChip<T>: View {
                         
                         VStack(alignment: .leading) {
                             
-                            HStack(){
+                            HStack(alignment: .center){
                                 Text (getArticleDate(item))
                                     .foregroundColor(Color.gray)
                                     .bold()
-                                    .font(.custom("Georgia", size: 14))
+                                    .font(.custom("Georgia", size: 12))
                                 Spacer()
                                 Text(getArticleByline(item) + " for " + getArticleSource(item))
                                     .foregroundColor(Color.gray)
                                     .bold()
-                                    .font(.custom("Georgia", size: 14))
+                                    .font(.custom("Georgia", size: 12))
                             }
                             Text( (getArticleAbstract(item)))
                                 .padding(.leading,5)
@@ -107,6 +107,6 @@ private func convertToSecureURL(_ urlString: String) -> String {
 
 struct ProductDetailCellView_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleDetailCellChip<SelectedArticleData>(item: SelectedArticleData(id: 123,thumbnailUrl: "", mediumUrl: "",largeUrl: "https://static01.nyt.com/images/2023/06/22/well/well-sleep-age-topper/well-sleep-age-topper-mediumThreeByTwo210-v4.jpg", title: "How Biden Is Leveraging His Defiance to Try to Stem Democratic Defections", abstract: "President Biden is making it clear that he holds all the cards when determining his political future. Can he get his critics to fold?", date: "7-9-2024", source: "New York Times", byline: "Tom Brenner"), getArticleImageUrl: {item in return item.largeUrl}, getArticleTitle: {item in return item.title}, getArticleAbstract: {item in return item.abstract}, getArticleDate: {item in return item.date}, getArticleSource: {item in return item.source}, getArticleByline: {item in return item.byline},onChipTapped: {} )
+        ArticleDetailCellChip<SelectedArticleData>(item: SelectedArticleData(id: 123,thumbnailUrl: "", mediumUrl: "",largeUrl: "https://static01.nyt.com/images/2023/06/22/well/well-sleep-age-topper/well-sleep-age-topper-mediumThreeByTwo210-v4.jpg", title: "How Biden Is Leveraging His Defiance to Try to Stem Democratic Defections", abstract: "President Biden is making it clear that he holds all the cards when determining his political future. Can he get his critics to fold?", date: "7-9-2024", source: "New York Times and Infobae", byline: "Tom Brenner"), getArticleImageUrl: {item in return item.largeUrl}, getArticleTitle: {item in return item.title}, getArticleAbstract: {item in return item.abstract}, getArticleDate: {item in return item.date}, getArticleSource: {item in return item.source}, getArticleByline: {item in return item.byline},onChipTapped: {} )
     }
 }

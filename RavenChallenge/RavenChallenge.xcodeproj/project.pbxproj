@@ -18,8 +18,11 @@
 		031302D52C3D837B0076F7C0 /* SelectedArticleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031302D42C3D837B0076F7C0 /* SelectedArticleData.swift */; };
 		031302D72C3DC1DC0076F7C0 /* ArticleDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031302D62C3DC1DC0076F7C0 /* ArticleDetailCell.swift */; };
 		031302DA2C3DCAF90076F7C0 /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031302D92C3DCAF90076F7C0 /* ArticleDetailView.swift */; };
+		031302DF2C3ECB1E0076F7C0 /* ArticleApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031302DE2C3ECB1E0076F7C0 /* ArticleApiTests.swift */; };
+		031302E12C3ECBB20076F7C0 /* ArticleRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031302E02C3ECBB20076F7C0 /* ArticleRepositoryTests.swift */; };
+		031302E52C3ED0890076F7C0 /* AllArticlesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031302E42C3ED0890076F7C0 /* AllArticlesViewModelTests.swift */; };
+		031302E72C3ED1620076F7C0 /* MockArticlesFetchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031302E62C3ED1620076F7C0 /* MockArticlesFetchUseCase.swift */; };
 		038EAFB52C3C5D2D001DD826 /* RavenChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038EAFB42C3C5D2D001DD826 /* RavenChallengeApp.swift */; };
-		038EAFB72C3C5D2D001DD826 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038EAFB62C3C5D2D001DD826 /* ContentView.swift */; };
 		038EAFB92C3C5D2F001DD826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038EAFB82C3C5D2F001DD826 /* Assets.xcassets */; };
 		038EAFBC2C3C5D2F001DD826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038EAFBB2C3C5D2F001DD826 /* Preview Assets.xcassets */; };
 		038EAFC62C3C5D2F001DD826 /* RavenChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038EAFC52C3C5D2F001DD826 /* RavenChallengeTests.swift */; };
@@ -63,9 +66,12 @@
 		031302D42C3D837B0076F7C0 /* SelectedArticleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedArticleData.swift; sourceTree = "<group>"; };
 		031302D62C3DC1DC0076F7C0 /* ArticleDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailCell.swift; sourceTree = "<group>"; };
 		031302D92C3DCAF90076F7C0 /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
+		031302DE2C3ECB1E0076F7C0 /* ArticleApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleApiTests.swift; sourceTree = "<group>"; };
+		031302E02C3ECBB20076F7C0 /* ArticleRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRepositoryTests.swift; sourceTree = "<group>"; };
+		031302E42C3ED0890076F7C0 /* AllArticlesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllArticlesViewModelTests.swift; sourceTree = "<group>"; };
+		031302E62C3ED1620076F7C0 /* MockArticlesFetchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticlesFetchUseCase.swift; sourceTree = "<group>"; };
 		038EAFB12C3C5D2D001DD826 /* RavenChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RavenChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		038EAFB42C3C5D2D001DD826 /* RavenChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavenChallengeApp.swift; sourceTree = "<group>"; };
-		038EAFB62C3C5D2D001DD826 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		038EAFB82C3C5D2F001DD826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		038EAFBB2C3C5D2F001DD826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		038EAFC12C3C5D2F001DD826 /* RavenChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavenChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +146,31 @@
 			path = ArticleDetailView;
 			sourceTree = "<group>";
 		};
+		031302DB2C3ECA970076F7C0 /* ApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				031302DE2C3ECB1E0076F7C0 /* ArticleApiTests.swift */,
+			);
+			path = ApiTests;
+			sourceTree = "<group>";
+		};
+		031302DC2C3ECA9F0076F7C0 /* RepositoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				031302E02C3ECBB20076F7C0 /* ArticleRepositoryTests.swift */,
+			);
+			path = RepositoryTests;
+			sourceTree = "<group>";
+		};
+		031302DD2C3ECAAD0076F7C0 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				031302E42C3ED0890076F7C0 /* AllArticlesViewModelTests.swift */,
+				031302E62C3ED1620076F7C0 /* MockArticlesFetchUseCase.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
 		038EAFA82C3C5D2D001DD826 = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +196,6 @@
 			children = (
 				038EAFDE2C3C5D4C001DD826 /* Clean */,
 				038EAFB42C3C5D2D001DD826 /* RavenChallengeApp.swift */,
-				038EAFB62C3C5D2D001DD826 /* ContentView.swift */,
 				038EAFBA2C3C5D2F001DD826 /* Preview Content */,
 			);
 			path = RavenChallenge;
@@ -182,6 +212,9 @@
 		038EAFC42C3C5D2F001DD826 /* RavenChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				031302DD2C3ECAAD0076F7C0 /* ViewModelTests */,
+				031302DC2C3ECA9F0076F7C0 /* RepositoryTests */,
+				031302DB2C3ECA970076F7C0 /* ApiTests */,
 				038EAFC52C3C5D2F001DD826 /* RavenChallengeTests.swift */,
 			);
 			path = RavenChallengeTests;
@@ -446,7 +479,6 @@
 				031302D72C3DC1DC0076F7C0 /* ArticleDetailCell.swift in Sources */,
 				031302CC2C3D7A4D0076F7C0 /* ArticleApi.swift in Sources */,
 				031302D32C3D82A30076F7C0 /* SpinnerView.swift in Sources */,
-				038EAFB72C3C5D2D001DD826 /* ContentView.swift in Sources */,
 				038EAFED2C3C8EF7001DD826 /* AllArticlesViewModel.swift in Sources */,
 				031302D52C3D837B0076F7C0 /* SelectedArticleData.swift in Sources */,
 				031302C52C3C961A0076F7C0 /* NavigationMode.swift in Sources */,
@@ -467,6 +499,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				038EAFC62C3C5D2F001DD826 /* RavenChallengeTests.swift in Sources */,
+				031302E52C3ED0890076F7C0 /* AllArticlesViewModelTests.swift in Sources */,
+				031302E12C3ECBB20076F7C0 /* ArticleRepositoryTests.swift in Sources */,
+				031302E72C3ED1620076F7C0 /* MockArticlesFetchUseCase.swift in Sources */,
+				031302DF2C3ECB1E0076F7C0 /* ArticleApiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
